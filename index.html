@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm project</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="flex">
+    <!-- <div class="d-none" id="welcomeback">
+        <h1>hey! welcome back</h1>
+        <button id="resumebtn">Resume alarm</button>
+    </div> -->
+
+    <!-- Main container -->
+    <div class="wrapper flex">
+        <img src="clockimg/clockimg.jpg" alt=""/>
+        <!-- Temporary time -->
+        <h1 id="currenttime">00:00:00</h1>
+
+        <!-- main content -->
+        <div id="content">
+            <!-- Hour section -->
+            <div class="column">
+                <select id="hour">
+                    <option value="Hour" selected hidden>Hour</option>
+                </select>
+            </div>
+            <!-- minute section -->
+            <div class="column">
+                <select id="minute">
+                    <option value="Minute" selected hidden>Minute</option>
+                </select>
+            </div>
+            <!-- AM/PM -->
+            <div class="column">
+                <select id="ampm">
+                <option value="AM/PM" selected hidden>AM/PM</option>
+                </select>
+            </div>   
+        </div>
+        <!-- Set alarm Button -->
+           <button id="setbtn"></button>
+            <!-- Alarm time indicator -->
+            <p id="alarmText"></p>
+    </div>
+    <!-- javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
